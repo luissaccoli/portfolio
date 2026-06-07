@@ -482,7 +482,7 @@ a .phone {
 
     .hero {
         display: block;
-        min-height: 980px
+        min-height: auto;
     }
 
     h1 {
@@ -521,7 +521,7 @@ a .phone {
     }
 
     .work {
-        display: flex
+        display: block;
     }
 
     .phone {
@@ -530,12 +530,28 @@ a .phone {
         max-height: 520px
     }
 
-    .horizontal {
+    .horizontal,
+    .vertical {
         width: 94%
     }
 
-    .vertical {
-        width: 72%
+    .phone-row {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .phone-row.left,
+    .phone-row.right {
+        justify-content: center;
+    }
+
+    .phone-row.left .caption,
+    .phone-row.right .caption {
+        margin: 0;
+        max-width: 100%;
+        text-align: center;
     }
 
     .caption {
@@ -550,5 +566,24 @@ a .phone {
 
     .final {
         font-size: 28px
+    }
+}
+
+@media (hover: none),
+(pointer: coarse) {
+
+    .phone,
+    a .phone {
+        cursor: default;
+    }
+
+    .phone:hover,
+    .phone:focus-visible,
+    .phone.twist-left:hover,
+    .phone.twist-right:hover,
+    .panel.work.sea .top.twist-left:hover,
+    .panel.work.sea .top.twist-right:hover {
+        filter: none;
+        transform: translateY(var(--parallax, 0));
     }
 }
