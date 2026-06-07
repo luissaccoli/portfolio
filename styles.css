@@ -577,6 +577,14 @@ a .phone {
         cursor: default;
     }
 
+    .work .phone,
+    .work .caption,
+    .work .final {
+        transform: none;
+        transition: none;
+        will-change: auto;
+    }
+
     .phone:hover,
     .phone:focus-visible,
     .phone.twist-left:hover,
@@ -584,6 +592,6 @@ a .phone {
     .panel.work.sea .top.twist-left:hover,
     .panel.work.sea .top.twist-right:hover {
         filter: none;
-        transform: translateY(var(--parallax, 0));
+        transform: none;
     }
 }
