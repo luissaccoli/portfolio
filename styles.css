@@ -57,7 +57,7 @@ html {
 
 body {
     margin: 0;
-    /* background: linear-gradient(135deg, var(--yellow) 0%, #ffa66e 48%, var(--pink) 100%); */
+    background: linear-gradient(135deg, var(--yellow) 0%, #ffa66e 48%, var(--pink) 100%);
     font-family: 'SF UI Text', 'Helvetica Neue', Arial, sans-serif;
     font-weight: 300;
     color: var(--ink)
