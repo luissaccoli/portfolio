@@ -7,9 +7,16 @@ const projectDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '.
 const srcDir = path.join(projectDir, 'src');
 const pagesDir = path.join(srcDir, 'pages');
 const outputDir = path.join(projectDir, 'public');
-const localePath = path.join(srcDir, 'locales', 'en.json');
+const localesDir = path.join(srcDir, 'locales');
 const contactPath = path.join(srcDir, 'data', 'contact.json');
 const imagesPath = path.join(srcDir, 'data', 'images.json');
+const defaultLang = 'en';
+const languageLabels = {
+  en: 'English',
+  es: 'Español',
+  nl: 'Nederlands',
+  pt: 'Português',
+};
 
 const env = nunjucks.configure(srcDir, {
   autoescape: true,
@@ -29,25 +36,40 @@ function findFiles(dir, extension) {
 }
 
 function renderPages() {
-  const t = JSON.parse(fs.readFileSync(localePath, 'utf8'));
   const contact = JSON.parse(fs.readFileSync(contactPath, 'utf8'));
   const images = JSON.parse(fs.readFileSync(imagesPath, 'utf8'));
+  const locales = findFiles(localesDir, '.json')
+    .map((localePath) => ({
+      code: path.basename(localePath, '.json'),
+      path: localePath,
+    }))
+    .sort((a, b) => a.code.localeCompare(b.code));
 
-  for (const inputPath of findFiles(pagesDir, '.njk')) {
-    const templatePath = path.relative(srcDir, inputPath);
-    const outputPath = path.join(
-      outputDir,
-      path.relative(pagesDir, inputPath).replace(/\.njk$/, '.html'),
-    );
-
-    fs.mkdirSync(path.dirname(outputPath), { recursive: true });
-    fs.writeFileSync(outputPath, env.render(templatePath, {
-      lang: 'en',
-      t,
-      contact,
-      images,
+  for (const locale of locales) {
+    const t = JSON.parse(fs.readFileSync(locale.path, 'utf8'));
+    const languages = locales.map(({ code }) => ({
+      code,
+      label: languageLabels[code] ?? code.toUpperCase(),
+      href: code === defaultLang ? './' : `./${code}.html`,
     }));
-    console.log(`Rendered ${templatePath} -> ${path.relative(projectDir, outputPath)}`);
+
+    for (const inputPath of findFiles(pagesDir, '.njk')) {
+      const templatePath = path.relative(srcDir, inputPath);
+      const relativeOutputPath = path.relative(pagesDir, inputPath).replace(/\.njk$/, '.html');
+      const outputPath = locale.code === defaultLang
+        ? path.join(outputDir, relativeOutputPath)
+        : path.join(outputDir, `${locale.code}.html`);
+
+      fs.mkdirSync(path.dirname(outputPath), { recursive: true });
+      fs.writeFileSync(outputPath, env.render(templatePath, {
+        lang: locale.code,
+        languages,
+        t,
+        contact,
+        images,
+      }));
+      console.log(`Rendered ${templatePath} (${locale.code}) -> ${path.relative(projectDir, outputPath)}`);
+    }
   }
 }
 
