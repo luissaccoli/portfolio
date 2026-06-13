@@ -1,6 +1,6 @@
 const statValues = document.querySelectorAll('[data-count-value]');
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-const duration = 5000;
+const duration = 3000;
 
 if (!reducedMotion) {
   statValues.forEach((element) => {
