@@ -1,7 +1,10 @@
 {
   "email": "luissaccoli@gmail.com",
   "phone": {
-    "display": "+55 51 99303-3575",
+    "display": "+31 6 57 49 01 53",
+    "href": "+31657490153"
+  },
+  "whatsapp": {
     "href": "+5551993033575"
   }
 }

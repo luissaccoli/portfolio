@@ -1,6 +1,6 @@
 {% macro contact_dialog(contact, copy) -%}
 <dialog class="contact-dialog" id="contact-dialog">
-  <form class="contact-form" data-whatsapp-number="{{ contact.phone.href }}" method="dialog">
+  <form class="contact-form" data-whatsapp-number="{{ contact.whatsapp.href }}" method="dialog">
     <button class="dialog-close" type="button" aria-label="{{ copy.close }}">×</button>
     <p class="dialog-eyebrow">{{ copy.eyebrow }}</p>
     <h2>{{ copy.dialogTitle }}</h2>
