@@ -3,18 +3,18 @@
 {% macro work_section(work) -%}
 <section class="panel work" aria-label="{{ work.label }}">
   <center>
-    {% if work.link %}
+    {%- if work.link %}
       <a href="{{ work.link }}" target="_blank" rel="noopener noreferrer">
         <img class="phone horizontal {{ work.image_class }}" src="{{ work.image }}" alt="{{ work.alt }}">
       </a>
-    {% else %}
+    {%- else %}
       <img class="phone horizontal {{ work.image_class }}" src="{{ work.image }}" alt="{{ work.alt }}">
-    {% endif %}
+    {%- endif %}
     <p class="caption" style="text-align: center;">{{ work.caption | safe }}</p>
   </center>
 
-  {% for row in work.rows %}
-    {{ phone_row(row) }}
-  {% endfor %}
+  {%- for row in work.rows %}
+    {{- phone_row(row) }}
+  {%- endfor %}
 </section>
 {%- endmacro %}

@@ -22,3 +22,5 @@ button.final{padding:0;border:0;background:transparent;cursor:pointer}.contact-d
 button.nav-link{border:0;font:inherit;cursor:pointer}
 
 .stat-value{display:inline-block;min-width:3.2ch;font-variant-numeric:tabular-nums}
+
+.phone{cursor:default}.work a .phone{cursor:pointer}
