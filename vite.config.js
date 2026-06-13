@@ -36,6 +36,7 @@ function getHtmlInputs(dir = 'public') {
 
 export default defineConfig({
   root: 'public',
+  base: './',
   build: {
     outDir: '../dist',
     rollupOptions: {
