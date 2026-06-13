@@ -1,0 +1,18 @@
+{% macro footer(socials) -%}
+<footer class="site-footer" aria-label="Social links">
+  <div class="footer-inner">
+    <p class="footer-title">Find me online</p>
+    <ul class="footer-links">
+      {%- for social in socials %}
+        <li>
+          {%- if social.url %}
+            <a href="{{ social.url }}" target="_blank" rel="noopener noreferrer">{{ social.label }}</a>
+          {%- else %}
+            <span class="footer-placeholder">{{ social.label }} <small>Coming soon</small></span>
+          {%- endif %}
+        </li>
+      {%- endfor %}
+    </ul>
+  </div>
+</footer>
+{%- endmacro %}

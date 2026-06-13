@@ -1,4 +1,5 @@
 {% extends "templates/layout.njk" %} 
+{% from "components/footer.njk" import footer %}
 {% from "components/navbar.njk" import navbar %}
 {% from "components/hero.njk" import hero %}
 {% from "components/work-section.njk" import work_section %}
@@ -94,4 +95,6 @@
     <a class="final" href="mailto:{{ profile.email }}">{{ t.contact.cta }}</a>
   </section>
 </main>
+
+{{ footer(socials) }}
 {% endblock %}

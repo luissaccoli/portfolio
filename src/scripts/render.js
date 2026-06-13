@@ -10,6 +10,7 @@ const outputDir = path.join(projectDir, 'public');
 const localesDir = path.join(srcDir, 'locales');
 const contactPath = path.join(srcDir, 'data', 'contact.json');
 const imagesPath = path.join(srcDir, 'data', 'images.json');
+const socialsPath = path.join(srcDir, 'data', 'socials.json');
 const defaultLang = 'en';
 const languageLabels = {
   en: 'English',
@@ -38,6 +39,7 @@ function findFiles(dir, extension) {
 function renderPages() {
   const contact = JSON.parse(fs.readFileSync(contactPath, 'utf8'));
   const images = JSON.parse(fs.readFileSync(imagesPath, 'utf8'));
+  const socials = JSON.parse(fs.readFileSync(socialsPath, 'utf8'));
   const locales = findFiles(localesDir, '.json')
     .map((localePath) => ({
       code: path.basename(localePath, '.json'),
@@ -67,6 +69,7 @@ function renderPages() {
         t,
         contact,
         images,
+        socials,
       }));
       console.log(`Rendered ${templatePath} (${locale.code}) -> ${path.relative(projectDir, outputPath)}`);
     }
