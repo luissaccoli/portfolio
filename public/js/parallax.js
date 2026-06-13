@@ -9,7 +9,11 @@ const updateParallax = () => {
     const speed = phoneSpeeds[index % phoneSpeeds.length];
     const rect = el.getBoundingClientRect();
     const translateY = rect.top * speed - viewportHeight * speed * 0.4;
+    const viewportPosition = ((rect.top + rect.height / 2) / viewportHeight) * 2 - 1;
+    const shadowY = Math.max(-1, Math.min(1, viewportPosition)) * 24;
+
     el.style.setProperty('--parallax', `${translateY}px`);
+    el.style.setProperty('--shadow-y', `${shadowY}px`);
   });
 
   captions.forEach((el) => {
