@@ -1,0 +1,34 @@
+{% macro contact_dialog(contact, copy) -%}
+<dialog class="contact-dialog" id="contact-dialog">
+  <form class="contact-form" data-whatsapp-number="{{ contact.phone.href }}" method="dialog">
+    <button class="dialog-close" type="button" aria-label="{{ copy.close }}">×</button>
+    <p class="dialog-eyebrow">{{ copy.eyebrow }}</p>
+    <h2>{{ copy.dialogTitle }}</h2>
+    <p class="dialog-intro">{{ copy.dialogIntro }}</p>
+
+    <label>
+      <span>{{ copy.message }}</span>
+      <textarea name="message" rows="5" required></textarea>
+    </label>
+
+    <div class="contact-fields" role="group" aria-describedby="contact-requirement">
+      <label>
+        <span>{{ copy.name }}</span>
+        <input name="name" type="text" autocomplete="name">
+      </label>
+      <label>
+        <span>{{ copy.email }}</span>
+        <input name="email" type="email" autocomplete="email">
+      </label>
+      <label>
+        <span>{{ copy.phone }}</span>
+        <input name="phone" type="tel" autocomplete="tel">
+      </label>
+    </div>
+
+    <p class="contact-requirement" id="contact-requirement">{{ copy.requirement }}</p>
+    <p class="contact-error" role="alert" hidden>{{ copy.error }}</p>
+    <button class="whatsapp-submit" type="submit">{{ copy.send }}</button>
+  </form>
+</dialog>
+{%- endmacro %}

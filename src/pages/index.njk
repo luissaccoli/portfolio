@@ -1,4 +1,5 @@
 {% extends "templates/layout.njk" %} 
+{% from "components/contact-dialog.njk" import contact_dialog %}
 {% from "components/footer.njk" import footer %}
 {% from "components/navbar.njk" import navbar %}
 {% from "components/hero.njk" import hero %}
@@ -92,9 +93,10 @@
   {% endfor %}
 
   <section class="panel final-panel" aria-label="{{ t.contact.label }}">
-    <a class="final" href="mailto:{{ profile.email }}">{{ t.contact.cta }}</a>
+    <button class="final" type="button" data-open-contact>{{ t.contact.cta }}</button>
   </section>
 </main>
 
+{{ contact_dialog(contact, t.contact) }}
 {{ footer(socials, t.footer) }}
 {% endblock %}

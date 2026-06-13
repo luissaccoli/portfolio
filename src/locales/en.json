@@ -107,7 +107,18 @@
   },
   "contact": {
     "label": "Contact",
-    "cta": "Let’s work together!"
+    "cta": "Let’s work together!",
+    "close": "Close contact form",
+    "eyebrow": "Start a conversation",
+    "dialogTitle": "Send me a message",
+    "dialogIntro": "Tell me a little about your idea and I’ll get back to you.",
+    "message": "Your message",
+    "name": "Name (optional)",
+    "email": "Email",
+    "phone": "Phone number",
+    "requirement": "Please provide an email address or phone number so I can reply.",
+    "error": "Add an email address or phone number before continuing.",
+    "send": "Continue to WhatsApp"
   },
   "navbar": {
     "label": "Main navigation",

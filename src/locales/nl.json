@@ -60,7 +60,7 @@
       ]
     }
   },
-  "contact": { "label": "Contact", "cta": "Laten we samenwerken!" },
+  "contact": { "label": "Contact", "cta": "Laten we samenwerken!", "close": "Contactformulier sluiten", "eyebrow": "Start een gesprek", "dialogTitle": "Stuur me een bericht", "dialogIntro": "Vertel kort over je idee, dan neem ik contact met je op.", "message": "Je bericht", "name": "Naam (optioneel)", "email": "E-mailadres", "phone": "Telefoonnummer", "requirement": "Vul een e-mailadres of telefoonnummer in zodat ik kan antwoorden.", "error": "Voeg een e-mailadres of telefoonnummer toe voordat je doorgaat.", "send": "Verder naar WhatsApp" },
   "navbar": { "label": "Hoofdnavigatie", "about": "Over mij", "language": "Taal", "bookCall": "Plan een gesprek" },
   "footer": { "label": "Sociale links", "title": "Vind mij online", "comingSoon": "Binnenkort" }
 }

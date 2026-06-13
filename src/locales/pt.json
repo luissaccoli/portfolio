@@ -60,7 +60,7 @@
       ]
     }
   },
-  "contact": { "label": "Contato", "cta": "Vamos trabalhar juntos!" },
+  "contact": { "label": "Contato", "cta": "Vamos trabalhar juntos!", "close": "Fechar formulário de contato", "eyebrow": "Comece uma conversa", "dialogTitle": "Envie uma mensagem", "dialogIntro": "Conte um pouco sobre sua ideia e entrarei em contato.", "message": "Sua mensagem", "name": "Nome (opcional)", "email": "E-mail", "phone": "Número de telefone", "requirement": "Informe um e-mail ou número de telefone para que eu possa responder.", "error": "Adicione um e-mail ou número de telefone antes de continuar.", "send": "Continuar para o WhatsApp" },
   "navbar": { "label": "Navegação principal", "about": "Sobre mim", "language": "Idioma", "bookCall": "Agendar chamada" },
   "footer": { "label": "Links sociais", "title": "Encontre-me online", "comingSoon": "Em breve" }
 }

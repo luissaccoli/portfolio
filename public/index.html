@@ -73,7 +73,7 @@
     <address>
       <span class="location-label"><img src="assets/location.svg" alt="Location" class="contact-icon">The Hague, Netherlands</span><br>
       <span class="contact-label"><img src="assets/mail.svg" alt="Email" class="contact-icon"><a href="mailto:luissaccoli@gmail.com">luissaccoli@gmail.com</a></span><br>
-      <span class="contact-label"><img src="assets/phone.svg" alt="Phone" class="contact-icon"><a href="tel:+31657490153">+31 6 574 90 153</a></span>
+      <span class="contact-label"><img src="assets/phone.svg" alt="Phone" class="contact-icon"><a href="tel:+5551993033575">+55 51 99303-3575</a></span>
     </address>
   </div>
 
@@ -189,10 +189,42 @@
   
 
   <section class="panel final-panel" aria-label="Contact">
-    <a class="final" href="mailto:luissaccoli@gmail.com">Let’s work together!</a>
+    <button class="final" type="button" data-open-contact>Let’s work together!</button>
   </section>
 </main>
 
+<dialog class="contact-dialog" id="contact-dialog">
+  <form class="contact-form" data-whatsapp-number="+5551993033575" method="dialog">
+    <button class="dialog-close" type="button" aria-label="Close contact form">×</button>
+    <p class="dialog-eyebrow">Start a conversation</p>
+    <h2>Send me a message</h2>
+    <p class="dialog-intro">Tell me a little about your idea and I’ll get back to you.</p>
+
+    <label>
+      <span>Your message</span>
+      <textarea name="message" rows="5" required></textarea>
+    </label>
+
+    <div class="contact-fields" role="group" aria-describedby="contact-requirement">
+      <label>
+        <span>Name (optional)</span>
+        <input name="name" type="text" autocomplete="name">
+      </label>
+      <label>
+        <span>Email</span>
+        <input name="email" type="email" autocomplete="email">
+      </label>
+      <label>
+        <span>Phone number</span>
+        <input name="phone" type="tel" autocomplete="tel">
+      </label>
+    </div>
+
+    <p class="contact-requirement" id="contact-requirement">Please provide an email address or phone number so I can reply.</p>
+    <p class="contact-error" role="alert" hidden>Add an email address or phone number before continuing.</p>
+    <button class="whatsapp-submit" type="submit">Continue to WhatsApp</button>
+  </form>
+</dialog>
 <footer class="site-footer" aria-label="Social links">
   <div class="footer-inner">
     <p class="footer-title">Find me online</p>
@@ -225,5 +257,6 @@
   <script type="module" src="js/parallax.js"></script>
   <script type="module" src="js/animate-bg.js"></script>
   <script type="module" src="js/navbar.js"></script>
+  <script type="module" src="js/contact-dialog.js"></script>
 </body>
 </html>
