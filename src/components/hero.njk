@@ -8,12 +8,12 @@
   </div>
 
   <div class="stats" aria-label="{{ profile.highlights_label }}">
-    {% for stat in profile.stats %}
+    {%- for stat in profile.stats %}
       <div>
         <img src="{{ stat.icon }}" alt="{{ stat.alt }}" class="stat-icon">
-        <div class="stat-copy"><b>{{ stat.value }}</b><em>{{ stat.label | safe }}</em></div>
+        <div class="stat-copy"><b class="stat-value" data-count-value="{{ stat.value }}">{{ stat.value }}</b><em>{{ stat.label | safe }}</em></div>
       </div>
-    {% endfor %}
+    {%- endfor %}
   </div>
 
   <div class="bio">
