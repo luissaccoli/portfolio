@@ -124,7 +124,7 @@
     "label": "Main navigation",
     "about": "About",
     "language": "Language",
-    "bookCall": "Book a call"
+    "sendMessage": "Send a message"
   },
   "footer": {
     "label": "Social links",

@@ -1,13 +1,15 @@
 const dialog = document.querySelector('#contact-dialog');
-const openButton = document.querySelector('[data-open-contact]');
+const openButtons = document.querySelectorAll('[data-open-contact]');
 
-if (dialog && openButton) {
+if (dialog && openButtons.length) {
   const form = dialog.querySelector('.contact-form');
   const closeButton = dialog.querySelector('.dialog-close');
   const error = dialog.querySelector('.contact-error');
 
-  openButton.addEventListener('click', () => {
-    dialog.showModal();
+  openButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      dialog.showModal();
+    });
   });
 
   closeButton.addEventListener('click', () => {
