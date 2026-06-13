@@ -1,6 +1,8 @@
 const background = document.querySelector('.hero-animated-bg');
 
 if (background) {
+  background.classList.add('no-webgl');
+
   const canvas = document.createElement('canvas');
   canvas.className = 'hero-contour-canvas';
   background.appendChild(canvas);
@@ -107,6 +109,8 @@ if (background) {
     }
 
     if (vertexShader && fragmentShader && gl.getProgramParameter(program, gl.LINK_STATUS)) {
+      background.classList.remove('no-webgl');
+
       const positionBuffer = gl.createBuffer();
       gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
       gl.bufferData(
