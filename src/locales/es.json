@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "title": "Luisa Correa | Portafolio de Creadora de Contenido",
+    "description": "Portafolio estático de una página para Luisa Correa, creadora de contenido y gestora de redes sociales."
+  },
+  "profile": {
+    "name": "Luisa<br>Correa",
+    "bannerAlt": "Imagen de portada",
+    "highlightsLabel": "Destacados",
+    "stats": [
+      { "alt": "Crecimiento de seguidores", "value": "2K", "label": "Crecimiento<br>en Instagram" },
+      { "alt": "Visualizaciones", "value": "5+", "label": "Posts/reels<br>semanales" },
+      { "alt": "Idiomas", "value": "3", "label": "Idiomas<br>fluidos" },
+      { "alt": "Visualizaciones", "value": "32.7K", "label": "Visualizaciones<br>del mejor reel" }
+    ],
+    "bio": "¡Hola! Soy Luisa, creadora de contenido y gestora de redes sociales multilingüe, radicada en La Haya. Creo contenido de video atractivo para marcas de hostelería, viajes y comunidades.",
+    "skillsTitle": "Habilidades principales",
+    "skills": ["Creación de videos cortos", "Gestión de redes sociales", "Gestión de sitios web", "Planificación de contenido"],
+    "location": "La Haya, Países Bajos",
+    "locationAlt": "Ubicación",
+    "emailAlt": "Correo electrónico",
+    "phoneAlt": "Teléfono",
+    "availability": "Disponible para oportunidades presenciales, híbridas y remotas a tiempo completo"
+  },
+  "work": {
+    "seaWolf": {
+      "label": "Trabajo para Sea Wolf",
+      "alt": "Perfil de Instagram de Sea Wolf en un marco de iPhone",
+      "caption": "Trabajé como creadora de contenido para <a href=\"https://swshostel.com/surf-hostel-barra-da-lagoa-florianopolis/\" target=\"_blank\" rel=\"noopener noreferrer\">Sea Wolf Hostels</a>, gestionando su presencia en redes sociales y creando contenido de video atractivo.",
+      "rows": [
+        { "alt": "Foto de hospitalidad de Sea Wolf en un marco de iPhone", "caption": "Produje material fotográfico y audiovisual utilizando mi propio equipo." },
+        { "alt": "Cuadrícula de reels de Sea Wolf en un marco de iPhone", "caption": "Planifiqué, grabé, edité y publiqué videos cortos sobre la vida en el hostel, experiencias locales e historias de viajeros." },
+        { "alt": "Resultados de reels de Sea Wolf en un marco de iPhone", "caption": "Gestioné de forma independiente la producción de contenido para Instagram y TikTok." }
+      ]
+    },
+    "duqueHostel": {
+      "label": "Trabajo para Duque Hostel",
+      "alt": "Perfil de Instagram de Duque Hostel en un marco de iPhone",
+      "caption": "Trabajé como creadora de contenido para <a href=\"https://www.tripadvisor.com/Hotel_Review-g1113399-d20114048-Reviews-Duque_Hostel-Barra_da_Lagoa_Florianopolis_State_of_Santa_Catarina.html\" target=\"_blank\" rel=\"noopener noreferrer\">Duque Hostels</a>, gestionando su presencia en redes sociales y creando contenido de video atractivo.",
+      "rows": [
+        { "alt": "Cuadrícula de reels de Duque Hostel en un marco de iPhone", "caption": "Gestioné todo el proceso de creación de contenido, desde el desarrollo del concepto hasta la publicación." },
+        { "alt": "Foto de bebida de la marca Duque Hostel en un marco de iPhone", "caption": "Grabé y edité videos cortos centrados en la comunidad, los viajes y las experiencias de los huéspedes." }
+      ]
+    },
+    "hangout": {
+      "label": "Trabajo para The Hangout Delft",
+      "alt": "Perfil de Instagram de The Hangout Delft en un marco de iPhone",
+      "caption": "En The Hangout Delft, aumenté la audiencia de Instagram del restaurante de 11.000 a 13.000 seguidores en tres meses, mientras también era responsable de gestionar el salón y el personal.",
+      "rows": [
+        { "alt": "Cuadrícula de reels de The Hangout en un marco de iPhone", "caption": "Lancé una campaña promocional que generó la venta de 73 platos destacados en una semana." },
+        { "alt": "Menú del sitio web de The Hangout en un marco de iPhone", "caption": "Apoyé el mantenimiento del <a href=\"https://thehangout-restaurants.com/menu\" target=\"_blank\" rel=\"noopener noreferrer\">sitio web</a> utilizando GitHub, HTML básico y flujos de trabajo con Git." }
+      ]
+    },
+    "orangeQS": {
+      "label": "Trabajo para Orange Quantum Systems",
+      "alt": "Imagen de video de una celebración de Orange Quantum Systems en un marco de iPhone",
+      "caption": "Documenté un evento de la startup <a href=\"https://orangeqs.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Orange Quantum Systems</a> mediante fotografía y video.",
+      "rows": [
+        { "alt": "Publicación de Orange Quantum Systems en LinkedIn en un marco de iPhone", "caption": "Edité un <a href=\"https://www.linkedin.com/posts/orangeqs_quantum-quantumindustry-quantumchips-activity-7429810564413108224-oLLN?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEyYCe8Blxrn9mUphC4iySc1h-uVTRbsm1E\" target=\"_blank\" rel=\"noopener noreferrer\">video promocional corto de resumen</a>." }
+      ]
+    }
+  },
+  "contact": { "label": "Contacto", "cta": "¡Trabajemos juntos!" }
+}

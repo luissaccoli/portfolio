@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "title": "Luisa Correa | Portfolio Content Creator",
+    "description": "Statisch portfolio van één pagina voor Luisa Correa, content creator en socialmediamanager."
+  },
+  "profile": {
+    "name": "Luisa<br>Correa",
+    "bannerAlt": "Bannerafbeelding",
+    "highlightsLabel": "Hoogtepunten",
+    "stats": [
+      { "alt": "Groei in volgers", "value": "2K", "label": "Instagram-<br>groei" },
+      { "alt": "Weergaven", "value": "5+", "label": "Posts/reels<br>per week" },
+      { "alt": "Talen", "value": "3", "label": "Vloeiend<br>gesproken talen" },
+      { "alt": "Weergaven", "value": "32.7K", "label": "Weergaven<br>topreel" }
+    ],
+    "bio": "Hoi! Ik ben Luisa, een meertalige content creator en socialmediamanager gevestigd in Den Haag. Ik maak aansprekende videocontent voor merken in hospitality, reizen en community.",
+    "skillsTitle": "Kernvaardigheden",
+    "skills": ["Korte video's maken", "Socialmediabeheer", "Websitebeheer", "Contentplanning"],
+    "location": "Den Haag, Nederland",
+    "locationAlt": "Locatie",
+    "emailAlt": "E-mail",
+    "phoneAlt": "Telefoon",
+    "availability": "Beschikbaar voor fulltime, hybride en remote functies"
+  },
+  "work": {
+    "seaWolf": {
+      "label": "Werk voor Sea Wolf",
+      "alt": "Instagramprofiel van Sea Wolf in een iPhone-frame",
+      "caption": "Ik werkte als content creator voor <a href=\"https://swshostel.com/surf-hostel-barra-da-lagoa-florianopolis/\" target=\"_blank\" rel=\"noopener noreferrer\">Sea Wolf Hostels</a>, waarbij ik hun aanwezigheid op sociale media beheerde en aansprekende videocontent maakte.",
+      "rows": [
+        { "alt": "Hospitalityfoto van Sea Wolf in een iPhone-frame", "caption": "Ik maakte foto- en videomateriaal met mijn eigen camera-apparatuur." },
+        { "alt": "Reelsoverzicht van Sea Wolf in een iPhone-frame", "caption": "Ik bedacht, filmde, monteerde en publiceerde korte video's over het hostelleven, lokale ervaringen en verhalen van reizigers." },
+        { "alt": "Reelresultaten van Sea Wolf in een iPhone-frame", "caption": "Ik beheerde zelfstandig de contentproductie voor Instagram en TikTok." }
+      ]
+    },
+    "duqueHostel": {
+      "label": "Werk voor Duque Hostel",
+      "alt": "Instagramprofiel van Duque Hostel in een iPhone-frame",
+      "caption": "Ik werkte als content creator voor <a href=\"https://www.tripadvisor.com/Hotel_Review-g1113399-d20114048-Reviews-Duque_Hostel-Barra_da_Lagoa_Florianopolis_State_of_Santa_Catarina.html\" target=\"_blank\" rel=\"noopener noreferrer\">Duque Hostels</a>, waarbij ik hun aanwezigheid op sociale media beheerde en aansprekende videocontent maakte.",
+      "rows": [
+        { "alt": "Reelsoverzicht van Duque Hostel in een iPhone-frame", "caption": "Ik beheerde het volledige contentcreatieproces, van conceptontwikkeling tot publicatie." },
+        { "alt": "Foto van een drankje met Duque Hostel-branding in een iPhone-frame", "caption": "Ik filmde en monteerde korte video's gericht op community, reizen en gastervaringen." }
+      ]
+    },
+    "hangout": {
+      "label": "Werk voor The Hangout Delft",
+      "alt": "Instagramprofiel van The Hangout Delft in een iPhone-frame",
+      "caption": "Bij The Hangout Delft liet ik het Instagram-publiek van het restaurant binnen drie maanden groeien van 11.000 naar 13.000 volgers, terwijl ik ook verantwoordelijk was voor het beheer van de zaak en het personeel.",
+      "rows": [
+        { "alt": "Reelsoverzicht van The Hangout in een iPhone-frame", "caption": "Ik lanceerde een promotiecampagne die binnen één week 73 verkochte gerechten opleverde." },
+        { "alt": "Websitemenu van The Hangout in een iPhone-frame", "caption": "Ik ondersteunde het onderhoud van de <a href=\"https://thehangout-restaurants.com/menu\" target=\"_blank\" rel=\"noopener noreferrer\">website</a> met GitHub, basis-HTML en Git-workflows." }
+      ]
+    },
+    "orangeQS": {
+      "label": "Werk voor Orange Quantum Systems",
+      "alt": "Videobeeld van een viering bij Orange Quantum Systems in een iPhone-frame",
+      "caption": "Ik legde een evenement van de startup <a href=\"https://orangeqs.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Orange Quantum Systems</a> vast met fotografie en videografie.",
+      "rows": [
+        { "alt": "LinkedIn-post van Orange Quantum Systems in een iPhone-frame", "caption": "Ik monteerde een <a href=\"https://www.linkedin.com/posts/orangeqs_quantum-quantumindustry-quantumchips-activity-7429810564413108224-oLLN?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEyYCe8Blxrn9mUphC4iySc1h-uVTRbsm1E\" target=\"_blank\" rel=\"noopener noreferrer\">korte promotionele terugblikvideo</a>." }
+      ]
+    }
+  },
+  "contact": { "label": "Contact", "cta": "Laten we samenwerken!" }
+}

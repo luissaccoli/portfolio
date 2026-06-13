@@ -1,0 +1,31 @@
+{% macro hero(profile) -%}
+<section class="panel hero" aria-labelledby="title">
+  <h1 id="title">{{ profile.name | safe }}</h1>
+
+  <div class="hero-image" aria-hidden="true">
+    <img src="{{ profile.banner.src }}" alt="{{ profile.banner.alt }}">
+  </div>
+
+  <div class="stats" aria-label="{{ profile.highlights_label }}">
+    {% for stat in profile.stats %}
+      <div>
+        <img src="{{ stat.icon }}" alt="{{ stat.alt }}" class="stat-icon">
+        <div class="stat-copy"><b>{{ stat.value }}</b><em>{{ stat.label | safe }}</em></div>
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="bio">
+    <p>{{ profile.bio }}</p>
+    <h2>{{ profile.skills_title }}</h2>
+    <p>{{ profile.skills | join('<br>') | safe }}</p>
+    <address>
+      <span class="location-label"><img src="{{ profile.contact_icons.location }}" alt="{{ profile.location_alt }}" class="contact-icon">{{ profile.location }}</span><br>
+      <span class="contact-label"><img src="{{ profile.contact_icons.email }}" alt="{{ profile.email_alt }}" class="contact-icon"><a href="mailto:{{ profile.email }}">{{ profile.email }}</a></span><br>
+      <span class="contact-label"><img src="{{ profile.contact_icons.phone }}" alt="{{ profile.phone_alt }}" class="contact-icon"><a href="tel:{{ profile.phone_href }}">{{ profile.phone }}</a></span>
+    </address>
+  </div>
+
+  <p class="available" aria-label="{{ profile.highlights_label }}">{{ profile.availability }}</p>
+</section>
+{%- endmacro %}

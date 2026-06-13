@@ -1,0 +1,18 @@
+{
+  "type": "module",
+  "devDependencies": {
+    "chokidar": "^3.6.0",
+    "concurrently": "^9.2.0"
+  },
+  "dependencies": {
+    "nunjucks": "^3.2.4",
+    "vite": "^7.0.2"
+  },
+  "scripts": {
+    "render": "node src/scripts/render.js",
+    "dev": "concurrently --kill-others \"npm:watch\" \"vite --host 0.0.0.0\"",
+    "build": "npm run render && vite build",
+    "watch": "node src/scripts/watch.js",
+    "preview": "vite preview"
+  }
+}

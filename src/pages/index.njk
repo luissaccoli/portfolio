@@ -1,0 +1,94 @@
+{% extends "templates/layout.njk" %} 
+{% from "components/hero.njk" import hero %}
+{% from "components/work-section.njk" import work_section %}
+
+{% set title = t.meta.title %}
+{% set description = t.meta.description %}
+
+{% set profile = {
+  name: t.profile.name,
+  banner: { src: images.profile.banner, alt: t.profile.bannerAlt },
+  contact_icons: images.profile.contact,
+  highlights_label: t.profile.highlightsLabel,
+  stats: [
+    { icon: images.profile.stats.followerGrowth, alt: t.profile.stats[0].alt, value: t.profile.stats[0].value, label: t.profile.stats[0].label },
+    { icon: images.profile.stats.views, alt: t.profile.stats[1].alt, value: t.profile.stats[1].value, label: t.profile.stats[1].label },
+    { icon: images.profile.stats.languages, alt: t.profile.stats[2].alt, value: t.profile.stats[2].value, label: t.profile.stats[2].label },
+    { icon: images.profile.stats.views, alt: t.profile.stats[3].alt, value: t.profile.stats[3].value, label: t.profile.stats[3].label }
+  ],
+  bio: t.profile.bio,
+  skills_title: t.profile.skillsTitle,
+  skills: t.profile.skills,
+  location: t.profile.location,
+  location_alt: t.profile.locationAlt,
+  email: contact.email,
+  email_alt: t.profile.emailAlt,
+  phone: contact.phone.display,
+  phone_href: contact.phone.href,
+  phone_alt: t.profile.phoneAlt,
+  availability: t.profile.availability
+} %}
+
+{% set work_sections = [
+  {
+    label: t.work.seaWolf.label,
+    link: "https://www.instagram.com/seawolfhostels?igsh=MW9tbXc2cmlyaGEzdQ==",
+    image: images.work.seaWolf.main,
+    image_class: "twist-left top",
+    alt: t.work.seaWolf.alt,
+    caption: t.work.seaWolf.caption,
+    rows: [
+      { side: "left", image: images.work.seaWolf.rows[0], image_class: "twist-right", alt: t.work.seaWolf.rows[0].alt, caption: t.work.seaWolf.rows[0].caption },
+      { side: "right", image: images.work.seaWolf.rows[1], image_class: "twist-left", alt: t.work.seaWolf.rows[1].alt, caption: t.work.seaWolf.rows[1].caption },
+      { side: "left", image: images.work.seaWolf.rows[2], image_class: "twist-right", alt: t.work.seaWolf.rows[2].alt, caption: t.work.seaWolf.rows[2].caption }
+    ]
+  },
+  {
+    label: t.work.duqueHostel.label,
+    link: "https://www.instagram.com/duquehostel?igsh=ZTQ3ejlzbTI5NWRv",
+    image: images.work.duqueHostel.main,
+    image_class: "twist-right top",
+    alt: t.work.duqueHostel.alt,
+    caption: t.work.duqueHostel.caption,
+    rows: [
+      { side: "right", image: images.work.duqueHostel.rows[0], image_class: "twist-left", alt: t.work.duqueHostel.rows[0].alt, caption: t.work.duqueHostel.rows[0].caption },
+      { side: "left", image: images.work.duqueHostel.rows[1], image_class: "twist-right", alt: t.work.duqueHostel.rows[1].alt, caption: t.work.duqueHostel.rows[1].caption }
+    ]
+  },
+  {
+    label: t.work.hangout.label,
+    link: "https://www.instagram.com/thehangout_delft?igsh=b3N0d3loNTcyamV1",
+    image: images.work.hangout.main,
+    image_class: "twist-left middle",
+    alt: t.work.hangout.alt,
+    caption: t.work.hangout.caption,
+    rows: [
+      { side: "right", image: images.work.hangout.rows[0], image_class: "twist-right", alt: t.work.hangout.rows[0].alt, caption: t.work.hangout.rows[0].caption },
+      { side: "left", image: images.work.hangout.rows[1], image_class: "twist-right", alt: t.work.hangout.rows[1].alt, caption: t.work.hangout.rows[1].caption }
+    ]
+  },
+  {
+    label: t.work.orangeQS.label,
+    image: images.work.orangeQS.main,
+    image_class: "twist-right cheers",
+    alt: t.work.orangeQS.alt,
+    caption: t.work.orangeQS.caption,
+    rows: [
+      { side: "right", image: images.work.orangeQS.rows[0], image_class: "twist-left", alt: t.work.orangeQS.rows[0].alt, caption: t.work.orangeQS.rows[0].caption }
+    ]
+  }
+] %}
+
+{% block content %}
+<main class="portfolio">
+  {{ hero(profile) }}
+
+  {% for work in work_sections %}
+    {{ work_section(work) }}
+  {% endfor %}
+
+  <section class="panel final-panel" aria-label="{{ t.contact.label }}">
+    <a class="final" href="mailto:{{ profile.email }}">{{ t.contact.cta }}</a>
+  </section>
+</main>
+{% endblock %}

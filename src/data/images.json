@@ -1,0 +1,45 @@
+{
+  "profile": {
+    "banner": "assets/banner.png",
+    "stats": {
+      "followerGrowth": "assets/follower_growth.svg",
+      "views": "assets/views.svg",
+      "languages": "assets/language.svg"
+    },
+    "contact": {
+      "location": "assets/location.svg",
+      "email": "assets/mail.svg",
+      "phone": "assets/phone.svg"
+    }
+  },
+  "work": {
+    "seaWolf": {
+      "main": "assets/seawolfhostels-horizontal.png",
+      "rows": [
+        "assets/seawolfhostels_mug.png",
+        "assets/seawolfhostels_reels1.png",
+        "assets/seawolfhostels_reels2.png"
+      ]
+    },
+    "duqueHostel": {
+      "main": "assets/duquehostel-horizontal.png",
+      "rows": [
+        "assets/duquehostel_reels.png",
+        "assets/duquehostel_mug.png"
+      ]
+    },
+    "hangout": {
+      "main": "assets/hangout-horizontal.png",
+      "rows": [
+        "assets/hangout_reels.png",
+        "assets/hangout_website.png"
+      ]
+    },
+    "orangeQS": {
+      "main": "assets/orangeqs_celebrating-horizontal.png",
+      "rows": [
+        "assets/orangeqs_linkedin.png"
+      ]
+    }
+  }
+}

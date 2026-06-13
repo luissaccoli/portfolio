@@ -1,0 +1,11 @@
+{% macro phone_row(row) -%}
+<div class="phone-row {{ row.side }}">
+  {% if row.side == 'left' %}
+    <img class="phone vertical {{ row.image_class }}" src="{{ row.image }}" alt="{{ row.alt }}">
+    <p class="caption">{{ row.caption | safe }}</p>
+  {% else %}
+    <p class="caption">{{ row.caption | safe }}</p>
+    <img class="phone vertical {{ row.image_class }}" src="{{ row.image }}" alt="{{ row.alt }}">
+  {% endif %}
+</div>
+{%- endmacro %}
