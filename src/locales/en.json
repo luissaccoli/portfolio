@@ -109,6 +109,12 @@
     "label": "Contact",
     "cta": "Let’s work together!"
   },
+  "navbar": {
+    "label": "Main navigation",
+    "about": "About",
+    "language": "Language",
+    "bookCall": "Book a call"
+  },
   "footer": {
     "label": "Social links",
     "title": "Find me online",

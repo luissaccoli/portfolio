@@ -61,5 +61,6 @@
     }
   },
   "contact": { "label": "Contact", "cta": "Laten we samenwerken!" },
+  "navbar": { "label": "Hoofdnavigatie", "about": "Over mij", "language": "Taal", "bookCall": "Plan een gesprek" },
   "footer": { "label": "Sociale links", "title": "Vind mij online", "comingSoon": "Binnenkort" }
 }

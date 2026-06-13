@@ -1,9 +1,9 @@
-{% macro navbar(languages, current_lang) -%}
-<nav class="glass-nav" aria-label="Main navigation">
-  <a class="nav-link" href="#title">About</a>
+{% macro navbar(languages, current_lang, copy) -%}
+<nav class="glass-nav" aria-label="{{ copy.label }}">
+  <a class="nav-link" href="#title">{{ copy.about }}</a>
 
   <details class="language-menu">
-    <summary>Language</summary>
+    <summary>{{ copy.language }}</summary>
     <div class="language-options">
       {%- for language in languages %}
         <a href="{{ language.href }}"{% if language.code == current_lang %} aria-current="page"{% endif %}>
@@ -13,6 +13,6 @@
     </div>
   </details>
 
-  <a class="nav-link nav-cta" href="#book-a-call">Book a call</a>
+  <a class="nav-link nav-cta" href="#book-a-call">{{ copy.bookCall }}</a>
 </nav>
 {%- endmacro %}

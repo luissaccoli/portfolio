@@ -61,5 +61,6 @@
     }
   },
   "contact": { "label": "Contacto", "cta": "¡Trabajemos juntos!" },
+  "navbar": { "label": "Navegación principal", "about": "Sobre mí", "language": "Idioma", "bookCall": "Reservar llamada" },
   "footer": { "label": "Enlaces sociales", "title": "Encuéntrame en línea", "comingSoon": "Próximamente" }
 }

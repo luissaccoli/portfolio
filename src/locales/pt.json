@@ -61,5 +61,6 @@
     }
   },
   "contact": { "label": "Contato", "cta": "Vamos trabalhar juntos!" },
+  "navbar": { "label": "Navegação principal", "about": "Sobre mim", "language": "Idioma", "bookCall": "Agendar chamada" },
   "footer": { "label": "Links sociais", "title": "Encontre-me online", "comingSoon": "Em breve" }
 }
