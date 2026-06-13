@@ -60,5 +60,6 @@
       ]
     }
   },
-  "contact": { "label": "Contato", "cta": "Vamos trabalhar juntos!" }
+  "contact": { "label": "Contato", "cta": "Vamos trabalhar juntos!" },
+  "footer": { "label": "Links sociais", "title": "Encontre-me online", "comingSoon": "Em breve" }
 }

@@ -1,7 +1,7 @@
-{% macro footer(socials) -%}
-<footer class="site-footer" aria-label="Social links">
+{% macro footer(socials, copy) -%}
+<footer class="site-footer" aria-label="{{ copy.label }}">
   <div class="footer-inner">
-    <p class="footer-title">Find me online</p>
+    <p class="footer-title">{{ copy.title }}</p>
     <ul class="footer-links">
       {%- for social in socials %}
         <li>
@@ -12,7 +12,7 @@
           {%- else %}
             <span class="footer-placeholder">
               <span class="footer-link-label"><img src="{{ social.icon }}" alt="">{{ social.label }}</span>
-              <small>Coming soon</small>
+              <small>{{ copy.comingSoon }}</small>
             </span>
           {%- endif %}
         </li>

@@ -60,5 +60,6 @@
       ]
     }
   },
-  "contact": { "label": "Contact", "cta": "Laten we samenwerken!" }
+  "contact": { "label": "Contact", "cta": "Laten we samenwerken!" },
+  "footer": { "label": "Sociale links", "title": "Vind mij online", "comingSoon": "Binnenkort" }
 }

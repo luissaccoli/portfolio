@@ -60,5 +60,6 @@
       ]
     }
   },
-  "contact": { "label": "Contacto", "cta": "¡Trabajemos juntos!" }
+  "contact": { "label": "Contacto", "cta": "¡Trabajemos juntos!" },
+  "footer": { "label": "Enlaces sociales", "title": "Encuéntrame en línea", "comingSoon": "Próximamente" }
 }

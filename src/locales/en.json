@@ -108,5 +108,10 @@
   "contact": {
     "label": "Contact",
     "cta": "Let’s work together!"
+  },
+  "footer": {
+    "label": "Social links",
+    "title": "Find me online",
+    "comingSoon": "Coming soon"
   }
 }
